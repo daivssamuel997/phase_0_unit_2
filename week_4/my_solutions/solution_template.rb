@@ -1,14 +1,13 @@
 # U2.W4: Title here
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # 2. Pseudocode
 
 # Input:
 # Output:
 # Steps:
-
 
 # 3. Initial Solution
 
@@ -20,13 +19,10 @@
 
 
 
-
-
-
-
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
 
+        
 
 
 
