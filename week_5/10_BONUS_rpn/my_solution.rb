@@ -84,4 +84,8 @@ calc.evaluate('70 10 4 + 5 * -') # => 0
 
 #Which parts of the challenge did you find tedious?
 
+<<<<<<< HEAD
 # Nothing. œ
+=======
+# Nothing. 
+>>>>>>> FETCH_HEAD
