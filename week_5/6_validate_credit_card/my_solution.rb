@@ -17,6 +17,7 @@
 
 # Don't forget to check on intialization for a card length
 # of exactly 16 digits
+=begin
 class CreditCard
     
     def initialize (number)
@@ -59,6 +60,7 @@ class CreditCard
     end
     
 end
+=end
 
 #card = CreditCard.new(1212121212121212)
 #card.check_card
@@ -98,6 +100,16 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+class CreditCard
+	def initialize(number)
+		raise ArgumentError.new("You must enter a valid credit card number.") unless number.to_s.length == 16
+		@number = number
+	end
+    
+	def check_card
+		@number.to_s.reverse.split(//).map(&:to_i).map.with_index{|number,index| index.even? ? number : number * 2}.join.split(//).map(&:to_i).reduce(:+).%(10).zero?
+	end
+end
 
 begin
     CreditCard.new(11111111111111112)
@@ -111,6 +123,7 @@ p card.check_card == true
 
 card = CreditCard.new(4408041234567892)
 p card.check_card == false
+puts card.check_card
 
 
 # 5. Reflection
