@@ -5,12 +5,17 @@
 
 
 # Pseudocode
-# Need to create a Song class. It brings in two arguments, a song name and the artist who sang it.
-    # Create an initialize method that brings in two arguments (song_name, artist) and defines instance variables.
-
-
-
-
+# Need to create a Song class.
+    # 'nitialize' method that brings in two arguments (song_name, artist) and defines instance variables.
+    # 'play' returns a string and tells the user what song they are listening to.
+# Need a class Playlist.
+    # 'initialize' will create an instance variable for an array. This will be my list. I also need to push the songs into the array.
+    # 'add' will bring in an argument and push the songs that you are trying to add into the array.
+    # 'num_of_tracks' simply just returns the length of the list, which represents the number of tracks
+    # 'includes?' brings in an argument and checks if the song is in the array? Returns true or false
+    # 'remove' brings in an argument and first checks to see if the song is even in the list. If it is, it deletes it from the list.
+    # 'play_all' iterates through the list and prints a string for each song saying it is playing.
+    # 'display' prints a list of the all the songs followed by the artists. It iterates through the array as well.
 
 # Initial Solution
 
